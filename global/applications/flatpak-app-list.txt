@@ -1,0 +1,17 @@
+com.github.tchx84.Flatseal
+com.obsproject.Studio
+io.missioncenter.MissionCenter
+org.gimp.GIMP
+org.gnome.Calculator
+org.gnome.Characters
+org.gnome.Connections
+org.gnome.Decibels
+org.gnome.font-viewer
+org.gnome.Loupe
+org.gnome.Showtime
+org.gnome.SimpleScan
+org.gnome.TextEditor
+org.kde.kdenlive
+org.keepassxc.KeePassXC
+org.localsend.localsend_app
+org.onlyoffice.desktopeditors

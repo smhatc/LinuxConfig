@@ -1,0 +1,6 @@
+opi
+flatpak
+curl
+wget
+tar
+findutils
