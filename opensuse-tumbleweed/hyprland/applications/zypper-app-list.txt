@@ -31,6 +31,7 @@ pavucontrol
 playerctl
 brightnessctl
 bluez
+blueman
 NetworkManager-applet
 NetworkManager-wwan
 NetworkManager-bluetooth
