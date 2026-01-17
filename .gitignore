@@ -1,4 +1,4 @@
 .vscode
-global/fonts
-!global/fonts/.gitkeep
-global/configurations/trusted-connections-list.txt
+global/general/fonts
+!global/general/fonts/.gitkeep
+global/general/configurations/trusted-connections-list.txt
