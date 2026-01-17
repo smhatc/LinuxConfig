@@ -4,3 +4,4 @@ curl
 wget
 tar
 findutils
+xdg-user-dirs

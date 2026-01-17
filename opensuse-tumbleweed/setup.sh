@@ -15,7 +15,7 @@ echo '### INSTALLING SCRIPT DEPENDENCIES ###'
 echo -e "######################################\n"
 
 echo "${process_icon} Starting installation of script dependencies..."
-source ./general/scripts/install-zypper-dependencies.sh
+source ./general/scripts/install-zypper-dependencies.sh && xdg-user-dirs-update
 echo "${success_icon} Finished installation of script dependencies."
 
 ########################
