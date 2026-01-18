@@ -18,6 +18,7 @@ tcpdump
 wireshark
 fastfetch
 starship
+nano
 kitty
 bleachbit
 MozillaFirefox
