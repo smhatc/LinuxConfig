@@ -7,8 +7,8 @@ sudo tar -xJf JetBrainsMono.tar.xz -C /usr/share/fonts
 sudo fc-cache -fv
 rm JetBrainsMono.tar.xz
 
-# Microsoft fonts (local install, path from perspective of distributions' setup script)
-if [[ -d ../global/fonts/microsoft ]]; then
-    sudo cp -r ../global/fonts/microsoft /usr/share/fonts
+# Microsoft fonts (local install, path from perspective of install script)
+if [[ -d ./global/general/fonts/microsoft ]]; then
+    sudo cp -r ./global/general/fonts/microsoft /usr/share/fonts
     sudo fc-cache -fv
 fi

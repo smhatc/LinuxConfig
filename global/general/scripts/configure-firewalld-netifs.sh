@@ -37,7 +37,7 @@ echo "${success_icon} Finished allowing inbound mDNS and LocalSend traffic on an
 echo "$line_separator_small"
 
 ## Applying the trusted zone to trusted network connections, disabling automatic DNS (in favor of privacy option), and disabling IPv6
-trusted_connections_list="../global/configurations/trusted-connections-list.txt"
+trusted_connections_list="./global/general/configurations/trusted-connections-list.txt"
 echo "${process_icon} Applying the trusted zone to trusted network connections, disabling automatic DNS (in favor of privacy option), and disabling IPv6..."
 if [[ ! -r "$trusted_connections_list" ]]; then
     echo "${error_icon} No trusted connections list found. Skipping network zone assignment and DNS/IPv6 tweaks..."
