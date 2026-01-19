@@ -16,4 +16,13 @@ echo -e "\n* To connect to Wi-Fi from CLI:\n"
 echo -e "-> List nearby Wi-Fi networks: nmcli device wifi list\n"
 echo -e "-> Connect to a specific SSID: sudo nmcli device wifi connect \"<SSID>\" password \"<PASSWORD>\"\n"
 echo -e "-> To see current connection names: nmcli connection show\n"
-echo -e "-> To change current connection names: sudo nmcli connection modify \"<CURRENT-NAME>\" con-name \"<NEW-NAME>\""
+echo -e "-> To change current connection names: sudo nmcli connection modify \"<CURRENT-NAME>\" con-name \"<NEW-NAME>\"\n"
+
+read -rp "Would you like to exit the script now to go create these directories/files? [Y/n] " exit_script
+
+if [[ ! "$exit_script" =~ ^[Nn]$ ]]; then
+    echo 'Great! Please go create the directories/files and run the script again. Exiting...'
+    exit
+else
+    echo 'Continuing with the script...'
+fi
