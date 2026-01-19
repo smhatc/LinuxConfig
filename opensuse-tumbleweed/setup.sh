@@ -8,7 +8,7 @@ echo -e "\n#########################################"
 echo '### SCRIPT ASSUMPTIONS & INSTRUCTIONS ###'
 echo -e "#########################################\n"
 
-general_instructions
+source ../global/general/scripts/display-instructions.sh
 if [[ "$desktop" == "Hyprland" ]]; then
     echo -e "\nAdditionally, because you have chosen to install \"${distro}\" with \"${desktop}\", the script assumes the following parameters were selected during OS installation:"
 fi
