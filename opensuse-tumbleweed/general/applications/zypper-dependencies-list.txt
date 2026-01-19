@@ -5,3 +5,4 @@ wget
 tar
 findutils
 xdg-user-dirs
+stow

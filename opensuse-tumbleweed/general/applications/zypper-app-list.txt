@@ -5,6 +5,7 @@ google-noto-sans-cjk-fonts
 google-noto-coloremoji-fonts
 symbols-only-nerd-fonts
 adwaita-icon-theme
+zip
 unzip
 git
 openssh
