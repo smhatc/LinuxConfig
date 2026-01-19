@@ -1,3 +1,4 @@
+# Displaying assumptions the script expects from the environment it is being run in
 echo -e "\n[ASSUMPTIONS CONFIRMATION -- PLEASE READ]\n"
 echo -e "Because you have chosen to install \"${distro}\" with \"${desktop}\", the script assumes the following parameters were selected during OS installation:\n"
 echo -e "1. Enabled repositories: OSS, NON-OSS, Updates.\n"

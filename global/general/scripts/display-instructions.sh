@@ -1,3 +1,4 @@
+# Displaying instructions about optional script configurations
 echo -e "[IMPORTANT INSTRUCTIONS -- PLEASE READ]\n"
 echo -e "The script recommends creating and including the following optional configuration directories/files in some cases:\n"
 echo -e "1. An optional Microsoft fonts directory called \"microsoft\" in the path \"./global/general/fonts/microsoft\".\n"

@@ -27,6 +27,7 @@ echo -e "##############################\n"
 
 echo "${process_icon} Starting distribution detection..."
 
+# Using "/etc/os-release" file as a standard method to automate distribution detection
 if [[ -f /etc/os-release ]]; then
     source /etc/os-release
     if [[ "$ID" == "opensuse-tumbleweed" ]]; then
@@ -49,11 +50,13 @@ echo -e "\n######################################"
 echo '### CHOOSING DESKTOP CONFIGURATION ###'
 echo -e "######################################\n"
 
+# Set list of desktop environment options plus path to setup file based on the detected distribution
 if [[ "$distro" == "openSUSE Tumbleweed" ]]; then
     desktop_choices+=("Hyprland")
     setup_file="./opensuse-tumbleweed/setup.sh"
 fi
 
+# Prompt the user to select a specific desktop environment from the list
 echo "${process_icon} The following desktop environment choices are available for \"${distro}\", please select one:"
 select choice in "${desktop_choices[@]}"; do
     if [[ -n "$choice" ]]; then
