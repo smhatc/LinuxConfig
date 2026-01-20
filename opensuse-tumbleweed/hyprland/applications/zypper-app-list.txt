@@ -30,11 +30,9 @@ pamixer
 pavucontrol
 playerctl
 brightnessctl
+NetworkManager-connection-editor
 bluez
 blueman
-NetworkManager-applet
-NetworkManager-wwan
-NetworkManager-bluetooth
 udiskie
 gvfs
 nautilus
