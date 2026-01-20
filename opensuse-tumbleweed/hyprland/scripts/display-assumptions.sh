@@ -6,8 +6,9 @@ echo -e "2. System role: Server.\n"
 echo -e "3. A user has been created (user creation not skipped).\n"
 echo -e "4. The following pattern selection:\n"
 echo -e "-> Basic: Help and Support Documentation, Base System, Enhanced Base System, SELinux Support, x86-64-v3 Libraries, Mobile, Software Management, Minimal Appliance Base.\n"
-echo -e "-> Added (saves time): KVM Server/Tools, Fonts\n"
-echo -e "-> Removed (saves time): YaST Base Utilities, YaST Server Utilities\n"
+echo -e "-> Added (saves time during install, not needed): KVM Server/Tools, Fonts.\n"
+echo -e "-> Removed (saves time during cleanup, not needed): YaST Base Utilities, YaST Server Utilities.\n"
+echo -e "5. No login managers and other window managers/desktop environments installed.\n"
 
 echo -e "$line_separator\n"
 read -rp "Does your OS installation match the above description? [Y/n] " assumptions_correct

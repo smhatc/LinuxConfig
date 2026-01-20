@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #########################################
 ### SCRIPT ASSUMPTIONS & INSTRUCTIONS ###
 #########################################
@@ -8,8 +6,8 @@ echo -e "\n#########################################"
 echo '### SCRIPT ASSUMPTIONS & INSTRUCTIONS ###'
 echo -e "#########################################\n"
 
-source ../global/general/scripts/display-instructions.sh
-[[ "$desktop" == "Hyprland" ]] && source ./hyprland/scripts/display-assumptions.sh
+source ./global/general/scripts/display-instructions.sh
+[[ "$desktop" == "Hyprland" ]] && source ./opensuse-tumbleweed/hyprland/scripts/display-assumptions.sh
 
 ######################################
 ### INSTALLING SCRIPT DEPENDENCIES ###
@@ -20,7 +18,7 @@ echo '### INSTALLING SCRIPT DEPENDENCIES ###'
 echo -e "######################################\n"
 
 echo "${process_icon} Starting installation of script dependencies..."
-source ./general/scripts/install-zypper-dependencies.sh && xdg-user-dirs-update
+source ./opensuse-tumbleweed/general/scripts/install-zypper-dependencies.sh && xdg-user-dirs-update
 echo "${success_icon} Finished installation of script dependencies."
 
 ########################
@@ -32,7 +30,7 @@ echo '### INSTALLING FONTS ###'
 echo -e "########################\n"
 
 echo "${process_icon} Starting installation of fonts..."
-source ../global/general/scripts/install-fonts.sh
+source ./global/general/scripts/install-fonts.sh
 echo "${success_icon} Finished installation of fonts."
 
 ##########################################################################
@@ -45,10 +43,10 @@ echo -e "#######################################################################
 
 echo "${process_icon} Starting installation of needed native apps, patterns, drivers, and codecs..."
 sudo zypper ref
-source ./general/scripts/install-zypper-patterns.sh
-source ./general/scripts/install-opi-apps.sh
-source ./general/scripts/install-zypper-apps.sh
-[[ "$desktop" == "Hyprland" ]] && source ./hyprland/scripts/install-zypper-apps.sh
+source ./opensuse-tumbleweed/general/scripts/install-zypper-patterns.sh
+source ./opensuse-tumbleweed/general/scripts/install-opi-apps.sh
+source ./opensuse-tumbleweed/general/scripts/install-zypper-apps.sh
+[[ "$desktop" == "Hyprland" ]] && source ./opensuse-tumbleweed/hyprland/scripts/install-zypper-apps.sh
 echo "${success_icon} Finished installation of needed native apps, patterns, drivers, and codecs."
 
 ################################################
@@ -60,7 +58,7 @@ echo '### INSTALLING NATIVE APPS (DIRECT DOWNLOAD) ###'
 echo -e "################################################\n"
 
 echo "${process_icon} Starting installation of native direct download applications..."
-source ../global/general/scripts/install-direct-apps.sh
+source ./global/general/scripts/install-direct-apps.sh
 echo -e "\n${success_icon} Finished installation of native direct download applications."
 
 ####################################################
@@ -72,9 +70,9 @@ echo '### UNINSTALLING UNNEEDED NATIVE APPS & PATTERNS ###'
 echo -e "####################################################\n"
 
 echo "${process_icon} Starting uninstallation of unneeded native apps and patterns..."
-source ./general/scripts/uninstall-zypper-patterns.sh
-source ./general/scripts/uninstall-zypper-apps.sh
-[[ "$desktop" == "Hyprland" ]] && source ./hyprland/scripts/uninstall-zypper-apps.sh
+source ./opensuse-tumbleweed/general/scripts/uninstall-zypper-patterns.sh
+source ./opensuse-tumbleweed/general/scripts/uninstall-zypper-apps.sh
+[[ "$desktop" == "Hyprland" ]] && source ./opensuse-tumbleweed/hyprland/scripts/uninstall-zypper-apps.sh
 echo "${success_icon} Finished uninstallation of unneeded native apps and patterns."
 
 ###########################
@@ -98,13 +96,13 @@ echo '### APPLYING SYSTEM/APPLICATION CONFIGURATIONS ###'
 echo -e "##################################################\n"
 
 echo -e "${process_icon} Applying configurations...\n"
-source ../global/general/scripts/configure-users-groups.sh
+source ./global/general/scripts/configure-users-groups.sh
 echo "$line_separator"
-source ../global/general/scripts/configure-services.sh
+source ./global/general/scripts/configure-services.sh
 echo "$line_separator"
-[[ "$desktop" == "Hyprland" ]] && source ../global/hyprland/scripts/configure-services.sh
+[[ "$desktop" == "Hyprland" ]] && source ./global/hyprland/scripts/configure-services.sh
 echo "$line_separator"
-source ../global/general/scripts/configure-firewalld-netifs.sh
+source ./global/general/scripts/configure-firewalld-netifs.sh
 echo -e "\n${success_icon} Finished applying configurations."
 
 #########################################
@@ -116,8 +114,8 @@ echo '### INSTALLING FLATPAK APPS (FLATHUB) ###'
 echo -e "#########################################\n"
 
 echo "${process_icon} Adding Flathub repository and installing needed Flatpak apps..."
-source ../global/general/scripts/add-flathub.sh
-source ../global/general/scripts/install-flatpak-apps.sh
+source ./global/general/scripts/add-flathub.sh
+source ./global/general/scripts/install-flatpak-apps.sh
 echo "${success_icon} Finished adding Flathub repository and installing needed Flatpak apps."
 
 ################################

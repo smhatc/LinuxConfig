@@ -1,5 +1,5 @@
 # Configuring system firewall (firewalld) and network interface connections (changing DNS and disabling IPv6)
-echo "${process_icon} Configuring system firewall (firewalld) and network interface connections (changing DNS and disabling IPv6)..."
+echo -e "${process_icon} Configuring system firewall (firewalld) and network interface connections (changing DNS and disabling IPv6)...\n"
 
 ## Setting the default zone and blocking all inbound traffic (meant for any unknown and untrusted connections)
 default_zone="public"
