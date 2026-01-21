@@ -126,5 +126,10 @@ echo -e "\n################################"
 echo '### HALT FOR REVIEW & REBOOT ###'
 echo -e "################################\n"
 
-read -rp "Press any key to reboot the system... "
-systemctl reboot
+read -rp "Would you like to automatically reboot the system now? [Y/n] " reboot_now
+
+if [[ ! "$reboot_now" =~ ^[Nn]$ ]]; then
+    systemctl reboot
+else
+    exit
+fi
