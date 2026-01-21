@@ -1,4 +1,5 @@
 com.github.tchx84.Flatseal
+com.ranfdev.DistroShelf
 com.obsproject.Studio
 io.missioncenter.MissionCenter
 org.gimp.GIMP
