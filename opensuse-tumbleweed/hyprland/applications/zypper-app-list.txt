@@ -22,7 +22,6 @@ swww
 slurp
 grim
 wl-clipboard
-cliphist
 wlogout
 xwayland
 power-profiles-daemon
