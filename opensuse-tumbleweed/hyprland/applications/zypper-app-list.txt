@@ -4,6 +4,7 @@ hyprland-qtutils
 hyprland-qt-support
 hypridle
 hyprlock
+hyprshot
 hyprpicker
 hyprsunset
 SwayNotificationCenter
