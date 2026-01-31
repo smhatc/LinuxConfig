@@ -70,8 +70,7 @@ echo '### UNINSTALLING UNNEEDED NATIVE APPS & PATTERNS ###'
 echo -e "####################################################\n"
 
 echo "${process_icon} Starting uninstallation of unneeded native apps and patterns..."
-source ./opensuse-tumbleweed/general/scripts/uninstall-zypper-patterns.sh
-[[ "$desktop" == "Hyprland" ]] && source ./opensuse-tumbleweed/hyprland/scripts/uninstall-zypper-apps.sh
+source ./opensuse-tumbleweed/general/scripts/uninstall-zypper-apps.sh
 echo "${success_icon} Finished uninstallation of unneeded native apps and patterns."
 
 ###########################
