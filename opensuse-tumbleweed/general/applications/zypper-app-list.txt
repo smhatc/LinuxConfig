@@ -24,4 +24,5 @@ nano
 kitty
 bleachbit
 MozillaFirefox
+MozillaFirefox-branding-upstream
 virtualbox
