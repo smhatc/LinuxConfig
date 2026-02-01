@@ -99,6 +99,7 @@ echo "$line_separator"
 source ./global/general/scripts/configure-services.sh
 echo "$line_separator"
 [[ "$desktop" == "Hyprland" ]] && source ./global/hyprland/scripts/configure-services.sh && echo "$line_separator"
+[[ "$desktop" == "Hyprland" ]] && source ./global/hyprland/scripts/configure-systemd-logind.sh && echo "$line_separator"
 source ./global/general/scripts/configure-firewalld-netifs.sh
 echo -e "\n${success_icon} Finished applying configurations."
 
