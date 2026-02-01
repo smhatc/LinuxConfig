@@ -9,6 +9,18 @@ echo -e "#########################################\n"
 source ./global/general/scripts/display-instructions.sh
 [[ "$desktop" == "Hyprland" ]] && source ./opensuse-tumbleweed/hyprland/scripts/display-assumptions.sh
 
+####################################################
+### UNINSTALLING UNNEEDED NATIVE APPS & PATTERNS ###
+####################################################
+
+echo -e "\n####################################################"
+echo '### UNINSTALLING UNNEEDED NATIVE APPS & PATTERNS ###'
+echo -e "####################################################\n"
+
+echo "${process_icon} Starting uninstallation of unneeded native apps and patterns..."
+source ./opensuse-tumbleweed/general/scripts/uninstall-zypper-apps.sh
+echo "${success_icon} Finished uninstallation of unneeded native apps and patterns."
+
 ######################################
 ### INSTALLING SCRIPT DEPENDENCIES ###
 ######################################
@@ -60,18 +72,6 @@ echo -e "################################################\n"
 echo "${process_icon} Starting installation of native direct download applications..."
 source ./global/general/scripts/install-direct-apps.sh
 echo -e "\n${success_icon} Finished installation of native direct download applications."
-
-####################################################
-### UNINSTALLING UNNEEDED NATIVE APPS & PATTERNS ###
-####################################################
-
-echo -e "\n####################################################"
-echo '### UNINSTALLING UNNEEDED NATIVE APPS & PATTERNS ###'
-echo -e "####################################################\n"
-
-echo "${process_icon} Starting uninstallation of unneeded native apps and patterns..."
-source ./opensuse-tumbleweed/general/scripts/uninstall-zypper-apps.sh
-echo "${success_icon} Finished uninstallation of unneeded native apps and patterns."
 
 ###########################
 ### UPDATING THE SYSTEM ###
