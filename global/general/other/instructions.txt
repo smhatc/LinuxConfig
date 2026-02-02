@@ -1,0 +1,31 @@
+[IMPORTANT INSTRUCTIONS -- PLEASE READ]
+
+The script recommends creating and including the following optional configuration directories/files in some cases:
+
+1. An optional Microsoft fonts directory called "microsoft" in the path "./global/general/fonts/microsoft".
+
+-> If you wish to install Microsoft fonts, provide all the desired .ttf files in this directory.
+
+-> If the directory is not provided, the script will simply ignore this.
+
+2. An optional text file called "trusted-connections-list.txt" containing a list of
+trusted connection profile names (one per line) in the path "./global/general/configurations/trusted-connections-list.txt".
+
+-> This file will be used for firewall and DNS/IPv6 hardening to apply the trusted zone and its allowed services to trusted network connections.
+
+-> If the file is not provided, the script will simply ignore DNS/IPv6 configuration and apply restrictive firewall rules
+to all network interfaces (will break over-the-LAN apps and services).
+
+-> To harden the network configuration and avoid potential LAN problems, please first connect to all networks you trust (*),
+optionally renaming their connection profiles so they are easy to identify.
+
+* To connect to Wi-Fi from CLI:
+
+-> List nearby Wi-Fi networks: nmcli device wifi list
+
+-> Connect to a specific SSID: sudo nmcli device wifi connect "<SSID>" password "<PASSWORD>"
+
+-> To see current connection names: nmcli connection show
+
+-> To change current connection names: sudo nmcli connection modify "<CURRENT-NAME>" con-name "<NEW-NAME>"
+

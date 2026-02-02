@@ -1,0 +1,21 @@
+
+[ASSUMPTIONS CONFIRMATION -- PLEASE READ]
+
+The script assumes the following parameters were selected during OS installation for your chosen desktop:
+
+1. Enabled repositories: OSS, NON-OSS, Updates.
+
+2. System role: Server.
+
+3. A user has been created (user creation not skipped).
+
+4. The following pattern selection:
+
+-> Basic: Help and Support Documentation, Base System, Enhanced Base System, SELinux Support, x86-64-v3 Libraries, Mobile/Laptop, Software Management, Minimal Appliance Base.
+
+-> Added (saves time during install, not needed): KVM Server, KVM Tools, Fonts.
+
+-> Removed (saves time during cleanup, not needed): YaST Base Utilities, YaST Server Utilities.
+
+5. No login managers and other window managers/desktop environments installed.
+
