@@ -1,2 +1,2 @@
 # Install Flatpak apps (external list)
-xargs flatpak install --user flathub -y <./global/general/applications/flatpak-app-list.txt
+sudo xargs flatpak install --system flathub -y <./global/general/applications/flatpak-app-list.txt
