@@ -8,7 +8,6 @@ org.gnome.Connections
 org.gnome.Decibels
 org.gnome.Loupe
 org.gnome.Showtime
-org.gnome.SimpleScan
 org.gnome.TextEditor
 org.gnome.font-viewer
 org.kde.kdenlive
