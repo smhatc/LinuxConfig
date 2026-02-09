@@ -1,6 +1,5 @@
 com.github.tchx84.Flatseal
 com.obsproject.Studio
-com.ranfdev.DistroShelf
 io.missioncenter.MissionCenter
 org.gimp.GIMP
 org.gnome.Calculator
