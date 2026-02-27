@@ -25,7 +25,6 @@ swww
 slurp
 grim
 wl-clipboard
-wlogout
 xwayland
 power-profiles-daemon
 pamixer
