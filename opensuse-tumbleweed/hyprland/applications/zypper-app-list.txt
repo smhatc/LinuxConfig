@@ -43,7 +43,6 @@ gnome-disk-utility
 qt5ct
 qt6ct
 kvantum-manager
-kvantum-themes
 kvantum-qt5
 kvantum-qt6
 nwg-look
