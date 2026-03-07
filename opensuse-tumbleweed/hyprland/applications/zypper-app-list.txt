@@ -46,3 +46,4 @@ kvantum-manager
 kvantum-qt5
 kvantum-qt6
 nwg-look
+gtk2-engine-murrine
