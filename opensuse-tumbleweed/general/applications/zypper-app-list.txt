@@ -4,7 +4,6 @@ google-noto-fonts
 google-noto-sans-cjk-fonts
 google-noto-coloremoji-fonts
 symbols-only-nerd-fonts
-adwaita-icon-theme
 distrobox
 zip
 unzip
@@ -12,6 +11,7 @@ git
 openssh
 shfmt
 ShellCheck
+libnotify-tools
 rsync
 yubikey-manager
 proton-vpn

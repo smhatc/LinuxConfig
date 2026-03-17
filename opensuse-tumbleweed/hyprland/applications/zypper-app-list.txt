@@ -8,7 +8,6 @@ hyprshot
 hyprpicker
 hyprsunset
 SwayNotificationCenter
-libnotify-tools
 pipewire
 wireplumber
 xdg-desktop-portal-hyprland
@@ -40,10 +39,10 @@ udiskie
 gvfs
 nautilus
 gnome-disk-utility
+adwaita-icon-theme
+adwaita-qt5
+adwaita-qt6
 qt5ct
 qt6ct
-kvantum-manager
-kvantum-qt5
-kvantum-qt6
 nwg-look
 gtk2-engine-murrine
