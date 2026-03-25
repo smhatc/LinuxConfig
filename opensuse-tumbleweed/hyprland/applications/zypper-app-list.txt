@@ -16,7 +16,12 @@ xdg-utils
 polkit-gnome
 gnome-keyring
 libqt5-qtwayland
+libqt5-qtstyleplugins-platformtheme-gtk2
+libqt5-qtbase-platformtheme-gtk3
+libqt5-qtbase-platformtheme-xdgdesktopportal
 qt6-wayland
+qt6-platformtheme-gtk3
+qt6-platformtheme-xdgdesktopportal
 waybar
 waybar-branding-upstream
 rofi-wayland
@@ -42,7 +47,5 @@ gnome-disk-utility
 adwaita-icon-theme
 adwaita-qt5
 adwaita-qt6
-qt5ct
-qt6ct
 nwg-look
 gtk2-engine-murrine
