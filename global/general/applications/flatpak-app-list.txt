@@ -1,3 +1,4 @@
+com.brave.Browser
 com.github.tchx84.Flatseal
 com.obsproject.Studio
 io.missioncenter.MissionCenter
@@ -13,4 +14,5 @@ org.gnome.font-viewer
 org.kde.kdenlive
 org.keepassxc.KeePassXC
 org.localsend.localsend_app
+org.mozilla.firefox
 org.onlyoffice.desktopeditors
