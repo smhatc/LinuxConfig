@@ -10,6 +10,7 @@ hyprsunset
 SwayNotificationCenter
 pipewire
 wireplumber
+xdg-desktop-portal
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 xdg-utils
