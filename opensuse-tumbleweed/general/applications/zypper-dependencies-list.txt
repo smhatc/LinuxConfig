@@ -1,5 +1,6 @@
 opi
 flatpak
+flatpak-xdg-utils
 curl
 wget
 tar
