@@ -4,6 +4,8 @@ flatpak-xdg-utils
 curl
 wget
 tar
+zip
+unzip
 findutils
 xdg-user-dirs
 stow
