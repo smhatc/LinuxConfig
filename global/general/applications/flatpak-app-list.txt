@@ -2,6 +2,7 @@ com.brave.Browser
 com.github.tchx84.Flatseal
 com.obsproject.Studio
 io.missioncenter.MissionCenter
+org.bleachbit.BleachBit
 org.gimp.GIMP
 org.gnome.Calculator
 org.gnome.Characters
