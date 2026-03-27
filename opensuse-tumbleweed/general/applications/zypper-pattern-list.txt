@@ -1,3 +1,0 @@
-fonts
-kvm_server
-kvm_tools
