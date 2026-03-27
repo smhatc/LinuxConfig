@@ -55,7 +55,6 @@ echo -e "#######################################################################
 
 echo "${process_icon} Starting installation of needed native apps, patterns, drivers, and codecs..."
 sudo zypper ref
-source ./opensuse-tumbleweed/general/scripts/install-zypper-patterns.sh
 source ./opensuse-tumbleweed/general/scripts/install-opi-apps.sh
 source ./opensuse-tumbleweed/general/scripts/install-zypper-apps.sh
 [[ "$desktop" == "Hyprland" ]] && source ./opensuse-tumbleweed/hyprland/scripts/install-zypper-apps.sh
