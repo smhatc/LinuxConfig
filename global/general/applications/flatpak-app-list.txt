@@ -1,6 +1,7 @@
 com.brave.Browser
 com.github.tchx84.Flatseal
 com.obsproject.Studio
+com.protonvpn.www
 com.yubico.yubioath
 io.missioncenter.MissionCenter
 org.bleachbit.BleachBit
