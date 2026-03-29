@@ -1,5 +1,5 @@
 # Install any desired fonts which are rare to find in most distributions' main repositories
-# Other fonts (Adwaita, Cantarell, Noto, Noto Emoji, and other general basic fonts) will be installed regularly via the specific package manager
+# Other fonts (e.g. Noto and other general basic fonts) will be installed regularly via the specific package manager
 
 # JetBrainsMono Nerd Font
 curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
