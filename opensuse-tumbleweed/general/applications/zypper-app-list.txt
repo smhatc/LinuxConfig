@@ -8,7 +8,6 @@ patterns-base-documentation
 patterns-base-sw_management
 patterns-server-kvm_server
 patterns-server-kvm_tools
-virtualbox
 crun
 podman
 distrobox
