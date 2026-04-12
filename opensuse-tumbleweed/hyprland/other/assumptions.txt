@@ -11,5 +11,3 @@ The script assumes the following parameters were selected during OS installation
 
 4. The default pattern selection for the Server role. Optionally removed YaST as script will remove it anyway.
 
-5. No login managers and other window managers/desktop environments installed.
-
