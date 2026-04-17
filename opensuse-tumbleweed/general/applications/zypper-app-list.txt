@@ -35,4 +35,3 @@ google-noto-sans-cjk-fonts
 google-noto-coloremoji-fonts
 liberation-fonts
 dejavu-fonts
-symbols-only-nerd-fonts
