@@ -1,4 +1,6 @@
+be.alexandervanhee.gradia
 com.brave.Browser
+com.github.finefindus.eyedropper
 com.github.tchx84.Flatseal
 com.obsproject.Studio
 com.yubico.yubioath
@@ -13,6 +15,7 @@ org.gnome.Loupe
 org.gnome.Showtime
 org.gnome.TextEditor
 org.gnome.font-viewer
+org.gnome.gitlab.YaLTeR.VideoTrimmer
 org.kde.kdenlive
 org.keepassxc.KeePassXC
 org.localsend.localsend_app
