@@ -1,6 +1,7 @@
 opi
 flatpak
 flatpak-xdg-utils
+xdg-desktop-portal
 curl
 wget
 tar
