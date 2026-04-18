@@ -13,7 +13,7 @@ slurp
 grim
 hyprpicker
 hyprshot
-swww
+awww
 nwg-look
 waybar-branding-upstream
 SwayNotificationCenter
