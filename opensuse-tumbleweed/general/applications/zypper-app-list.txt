@@ -9,6 +9,7 @@ patterns-base-sw_management
 patterns-server-kvm_server
 patterns-server-kvm_tools
 adwaita-icon-theme
+yaru-icon-theme
 google-noto-fonts
 google-noto-sans-cjk-fonts
 google-noto-coloremoji-fonts
