@@ -6,7 +6,6 @@ com.obsproject.Studio
 com.yubico.yubioath
 io.missioncenter.MissionCenter
 org.bleachbit.BleachBit
-org.gimp.GIMP
 org.gnome.Calculator
 org.gnome.Characters
 org.gnome.Connections
@@ -16,7 +15,6 @@ org.gnome.Showtime
 org.gnome.TextEditor
 org.gnome.font-viewer
 org.gnome.gitlab.YaLTeR.VideoTrimmer
-org.kde.kdenlive
 org.keepassxc.KeePassXC
 org.localsend.localsend_app
 org.mozilla.firefox
