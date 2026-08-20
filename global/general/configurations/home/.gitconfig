@@ -1,0 +1,8 @@
+[user]
+	name = Sadeq Talaq
+	email = 165420981+smhatc@users.noreply.github.com
+[init]
+	defaultBranch = main
+[core]
+	editor = code --wait
+

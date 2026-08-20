@@ -1,0 +1,49 @@
+@import "./theme.css";
+
+/* General styles */
+* {
+    border-radius: 10px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+tooltip {
+    border: 2px solid @accent;
+}
+
+tooltip label {
+    font-weight: normal;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    padding: 10px 10px 0;
+}
+
+/* Default module styles */
+@import "./modules/backlight/backlight.css";
+@import "./modules/battery/battery.css";
+@import "./modules/bluetooth/bluetooth.css";
+@import "./modules/clock/clock.css";
+@import "./modules/idle_inhibitor/idle_inhibitor.css";
+@import "./modules/network/network.css";
+@import "./modules/power-profiles-daemon/power-profiles-daemon.css";
+@import "./modules/privacy/privacy.css";
+@import "./modules/pulseaudio/pulseaudio.css";
+@import "./modules/tray/tray.css";
+
+/* Custom module styles */
+@import "./modules/custom/app-launcher/app-launcher.css";
+@import "./modules/custom/night-light/night-light.css";
+@import "./modules/custom/notification-menu/notification-menu.css";
+@import "./modules/custom/power-menu/power-menu.css";
+
+/* Hyprland-specific module styles */
+@import "./modules/hyprland/language/language.css";
+@import "./modules/hyprland/workspaces/workspaces.css";

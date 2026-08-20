@@ -1,0 +1,36 @@
+#network {
+    padding-right: 4px;
+    border-bottom: 2px solid @accent;
+    color: @accent;
+    background: @main-bg;
+    transition: 0.3s;
+}
+
+#network:hover {
+    color: @main-bg;
+    background: @accent;
+}
+
+#network.ethernet {
+    padding-right: 2px;
+}
+
+#network.disabled {
+    border-bottom-color: @critical;
+    color: @critical;
+}
+
+#network.disabled:hover {
+    color: @main-bg;
+    background: @critical;
+}
+
+#network.disconnected {
+    border-bottom-color: @warning;
+    color: @warning;
+}
+
+#network.disconnected:hover {
+    color: @main-bg;
+    background: @warning;
+}

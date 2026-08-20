@@ -1,0 +1,23 @@
+{
+    "clock": {
+        "format": "󰸗 {:%b %d %I:%M %p}",
+        "min-length": 18,
+        "max-length": 18,
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 4,
+            "format": {
+                "months": "<span alpha='100%'><b>{}</b></span>",
+                "weekdays": "<span alpha='90%'>{}</span>",
+                "days": "<span alpha='80%'>{}</span>",
+                "today": "<span alpha='100%'><b>{}</b></span>",
+            },
+        },
+        "actions": {
+            "on-click": "mode",
+        },
+        "cursor": false,
+        "tooltip": true,
+        "tooltip-format": "{calendar}",
+    },
+}

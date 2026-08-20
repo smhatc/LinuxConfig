@@ -1,0 +1,32 @@
+#power-profiles-daemon {
+    padding: 0 4px;
+    border-bottom: 2px solid @accent;
+    color: @accent;
+    background: @main-bg;
+    transition: 0.3s;
+}
+
+#power-profiles-daemon:hover {
+    color: @main-bg;
+    background: @accent;
+}
+
+#power-profiles-daemon.balanced {
+    border-bottom-color: @balanced;
+    color: @balanced;
+}
+
+#power-profiles-daemon.balanced:hover {
+    color: @main-bg;
+    background: @balanced;
+}
+
+#power-profiles-daemon.power-saver {
+    border-bottom-color: @power-saver;
+    color: @power-saver;
+}
+
+#power-profiles-daemon.power-saver:hover {
+    color: @main-bg;
+    background: @power-saver;
+}

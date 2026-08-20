@@ -1,0 +1,25 @@
+#workspaces {
+    border-bottom: 2px solid @accent;
+    background: @main-bg;
+}
+
+#workspaces button {
+    padding-left: unset;
+    padding-left: 8px;
+    padding-right: unset;
+    padding-right: 8px;
+    border: none;
+    margin: 2px;
+    color: @accent;
+    transition: 0.3s;
+}
+
+#workspaces button.empty {
+    color: @regular;
+}
+
+#workspaces button:hover,
+#workspaces button.visible {
+    color: @main-bg;
+    background: @accent;
+}

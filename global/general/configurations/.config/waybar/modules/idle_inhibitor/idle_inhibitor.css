@@ -1,0 +1,22 @@
+#idle_inhibitor {
+    padding-right: 2px;
+    border-bottom: 2px solid @accent;
+    color: @accent;
+    background: @main-bg;
+    transition: 0.3s;
+}
+
+#idle_inhibitor:hover {
+    color: @main-bg;
+    background: @accent;
+}
+
+#idle_inhibitor.activated {
+    border-bottom-color: @warning;
+    color: @warning;
+}
+
+#idle_inhibitor.activated:hover {
+    color: @main-bg;
+    background: @warning;
+}

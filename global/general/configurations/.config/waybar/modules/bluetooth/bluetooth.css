@@ -1,0 +1,41 @@
+#bluetooth {
+    border-bottom: 2px solid @accent;
+    color: @accent;
+    background: @main-bg;
+    transition: 0.3s;
+}
+
+#bluetooth:hover {
+    color: @main-bg;
+    background: @accent;
+}
+
+#bluetooth.no-controller,
+#bluetooth.disabled,
+#bluetooth.off {
+    border-bottom-color: @critical;
+    color: @critical;
+}
+
+#bluetooth.no-controller:hover,
+#bluetooth.disabled:hover,
+#bluetooth.off:hover {
+    color: @main-bg;
+    background: @critical;
+}
+
+#bluetooth.on,
+#bluetooth.discoverable,
+#bluetooth.discovering,
+#bluetooth.pairable {
+    border-bottom-color: @warning;
+    color: @warning;
+}
+
+#bluetooth.on:hover,
+#bluetooth.discoverable:hover,
+#bluetooth.discovering:hover,
+#bluetooth.pairable:hover {
+    color: @main-bg;
+    background: @warning;
+}

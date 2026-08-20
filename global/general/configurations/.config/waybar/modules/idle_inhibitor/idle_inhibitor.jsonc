@@ -1,0 +1,14 @@
+{
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰅶",
+            "deactivated": "󰾪",
+        },
+        "min-length": 3,
+        "max-length": 3,
+        "timeout": 480, // 8 hours
+        "cursor": false,
+        "tooltip": false,
+    },
+}

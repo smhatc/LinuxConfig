@@ -1,0 +1,12 @@
+{
+    "hyprland/language": {
+        "format": "  {}",
+        "format-en": "en",
+        "format-ar": "ar",
+        "min-length": 5,
+        "max-length": 5,
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
+        "cursor": false,
+        "tooltip": false,
+    },
+}

@@ -1,0 +1,141 @@
+@import "./theme.css";
+
+* {
+    all: unset;
+    border-radius: 10px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+scale trough {
+    min-width: 5px;
+    margin: 5px;
+}
+
+trough {
+    background-color: @main-bg;
+}
+
+trough slider {
+    min-width: 5px;
+    margin: 5px;
+    background-color: @accent;
+}
+
+.notification-background {
+    padding: 0px;
+    border: 2px solid @accent;
+    margin: 10px;
+    color: @accent;
+    background-color: @main-bg;
+}
+
+.notification-background .notification {
+    padding: 10px;
+}
+
+.notification-content {
+    margin: 10px;
+}
+
+.notification-content .summary {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: @accent;
+}
+
+.notification-content .time {
+    margin-top: 5px;
+    color: @regular;
+}
+
+.notification-content .body {
+    color: @regular;
+}
+
+.notification-background .close-button {
+    padding: 2.5px;
+    margin: 5px;
+    color: @main-bg;
+    background-color: @critical;
+}
+
+.notification .notification-action {
+    padding: 10px;
+    border: 2px solid @accent;
+    margin: 5px;
+    color: @accent;
+    background-color: @main-bg;
+    transition: 0.3s;
+}
+
+.notification .notification-action:hover,
+.notification .notification-action:active {
+    color: @main-bg;
+    background-color: @accent;
+}
+
+.notification progress {
+    background-color: @accent;
+}
+
+.notification progress,
+.notification trough {
+    padding: 10px 0;
+}
+
+.control-center {
+    padding: 20px;
+    border: 2px solid @accent;
+    color: @accent;
+    background-color: @main-bg;
+}
+
+.control-center .widget-title > label {
+    font-size: 20px;
+}
+
+.control-center .widget-title button {
+    min-width: 100px;
+    min-height: 35px;
+    padding: 2px;
+    border: 2px solid @accent;
+    background-color: @main-bg;
+    transition: 0.3s;
+}
+
+.control-center .widget-title button:hover,
+.control-center .widget-title button:active {
+    color: @main-bg;
+    background-color: @accent;
+}
+
+.control-center .notification-group {
+    margin: 10px 15px;
+}
+
+.widget-dnd {
+    margin: 10px 0;
+}
+
+.widget-dnd > switch {
+    min-width: 100px;
+    min-height: 35px;
+    padding: 2px;
+    border: 2px solid @accent;
+    background-color: @main-bg;
+    transition: 0.3s;
+}
+
+.widget-dnd > switch:checked {
+    background-color: @accent;
+}
+
+.widget-dnd > switch slider {
+    background-color: @accent;
+}
+
+.widget-dnd > switch:checked slider {
+    background-color: @main-bg;
+}

@@ -1,0 +1,36 @@
+#custom-notification-menu {
+    padding-right: 2px;
+    border-bottom: 2px solid @accent;
+    color: @accent;
+    background: @main-bg;
+    transition: 0.3s;
+}
+
+#custom-notification-menu:hover {
+    color: @main-bg;
+    background: @accent;
+}
+
+#custom-notification-menu.notification,
+#custom-notification-menu.inhibited-notification {
+    border-bottom-color: @warning;
+    color: @warning;
+}
+
+#custom-notification-menu.notification:hover,
+#custom-notification-menu.inhibited-notification:hover {
+    color: @main-bg;
+    background: @warning;
+}
+
+#custom-notification-menu.dnd-notification,
+#custom-notification-menu.dnd-inhibited-notification {
+    border-bottom-color: @critical;
+    color: @critical;
+}
+
+#custom-notification-menu.dnd-notification:hover,
+#custom-notification-menu.dnd-inhibited-notification:hover {
+    color: @main-bg;
+    background: @critical;
+}

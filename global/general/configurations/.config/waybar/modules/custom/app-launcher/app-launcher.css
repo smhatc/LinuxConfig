@@ -1,0 +1,11 @@
+#custom-app-launcher {
+    border-bottom: 2px solid @accent;
+    color: @accent;
+    background: @main-bg;
+    transition: 0.3s;
+}
+
+#custom-app-launcher:hover {
+    color: @main-bg;
+    background: @accent;
+}

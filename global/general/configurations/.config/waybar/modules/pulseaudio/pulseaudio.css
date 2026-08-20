@@ -1,0 +1,24 @@
+#pulseaudio {
+    padding: 0 4px;
+    border-bottom: 2px solid @accent;
+    color: @accent;
+    background: @main-bg;
+    transition: 0.3s;
+}
+
+#pulseaudio:hover {
+    color: @main-bg;
+    background: @accent;
+}
+
+#pulseaudio.output.muted,
+#pulseaudio.input.source-muted {
+    border-bottom-color: @critical;
+    color: @critical;
+}
+
+#pulseaudio.output.muted:hover,
+#pulseaudio.input.source-muted:hover {
+    color: @main-bg;
+    background: @critical;
+}

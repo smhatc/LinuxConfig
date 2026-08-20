@@ -1,0 +1,145 @@
+@theme "~/.config/rofi/theme.rasi"
+
+/* General Configuration */
+* {
+    font: "JetBrainsMono Nerd Font Bold 15";
+}
+
+configuration {
+	modi: "drun";
+    show-icons: true;
+	drun-display-format: "{name}";
+    hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: [ MousePrimary, MouseSecondary, MouseDPrimary ];
+}
+
+/* Main Window */
+window {
+    enabled: true;
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    x-offset: 0px;
+    y-offset: 0px;
+    cursor: "default";
+    width: 1000px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: @accent;
+    margin: 0px;
+    background-color: @main-bg;
+}
+
+/* Main Box */
+mainbox {
+    enabled: true;
+    padding: 0px;
+    border: 0px solid;
+    spacing: 20px;
+    margin: 0px;
+    background-color: @main-bg;
+    children: [ "inputbar", "listview" ];
+}
+
+/* Input Bar and Text Entry */
+inputbar {
+    enabled: true;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: @accent;
+    spacing: 0px;
+    margin: 0px;
+    text-color: @accent;
+    background-color: @main-bg;
+    children: [ "entry" ];
+}
+
+entry {
+    enabled: true;
+    placeholder: "󰀻 Search Applications";
+    cursor: text;
+    placeholder-color: @accent;
+    text-color: @accent;
+    background-color: @main-bg;
+}
+
+/* List View and Scrollbar */
+listview {
+    enabled: true;
+    columns: 1;
+    fixed-columns: true;
+    lines: 5;
+    fixed-height: true;
+    dynamic: false;
+    scrollbar: true;
+    cycle: false;
+    layout: vertical;
+    reverse: false;
+    cursor: "default";    
+    padding: 0px;
+    border: 0px solid;
+    spacing: 20px;
+    margin: 0px;
+    text-color: @accent;
+    background-color: @main-bg;
+}
+
+scrollbar {
+    handle-rounded-corners: true;
+    handle-width: 5px;
+    handle-color: @accent;
+    background-color: @main-bg;
+}
+
+/* Elements */
+element {
+    enabled: true;
+    orientation: horizontal;
+    cursor: "default";
+    padding: 0px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: @accent;
+    spacing: 20px;
+    margin: 0px;
+    text-color: @accent;
+    background-color: @main-bg;
+}
+
+element selected {
+    text-color: @main-bg;
+    background-color: @accent;
+}
+
+element-icon {
+    size: 24px;
+    cursor: inherit;
+    padding: 20px;
+    border: 0px solid;
+    border-radius: 10px;
+    border-color: @accent;
+    text-color: @accent;
+    background-color: @main-bg;
+}
+
+element-text {
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+    cursor: inherit;
+    highlight: inherit;
+    padding: 20px;
+    text-color: inherit;
+    background-color: transparent;
+}
+
+/* Text Boxes (e.g. Error Message) */
+textbox {
+    enabled: true;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+    text-color: @accent;
+    background-color: @main-bg;
+}

@@ -1,0 +1,11 @@
+{
+    "custom/power-menu": {
+        "format": "",
+        "min-length": 3,
+        "max-length": 3,
+        "on-click": "~/.config/rofi/scripts/power-menu.sh",
+        "on-click-right": "loginctl lock-session",
+        "cursor": false,
+        "tooltip": false,
+    },
+}

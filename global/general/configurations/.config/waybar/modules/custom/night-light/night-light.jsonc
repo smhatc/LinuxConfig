@@ -1,0 +1,15 @@
+{
+    "custom/night-light": {
+        "exec": "pidof hyprsunset > /dev/null && echo '{\"text\": \"running\", \"alt\": \"running\", \"tooltip\": \"running\", \"class\": \"running\", \"percentage\": 100}' || echo '{\"text\": \"stopped\", \"alt\": \"stopped\", \"tooltip\": \"stopped\", \"class\": \"stopped\", \"percentage\": 0}'",
+        "exec-if": "which hyprsunset",
+        "return-type": "json",
+        "format": "{icon}",
+        "format-icons": ["󱩍", "󱩌"],
+        "min-length": 3,
+        "max-length": 3,
+        "signal": 1,
+        "on-click": "pkill hyprsunset && sleep 0.25 && pkill -RTMIN+1 waybar || hyprsunset -t 3000 & sleep 0.25 && pkill -RTMIN+1 waybar",
+        "cursor": false,
+        "tooltip": false,
+    },
+}

@@ -1,0 +1,12 @@
+#custom-power-menu {
+    padding-right: 2px;
+    border-bottom: 2px solid @accent;
+    color: @accent;
+    background: @main-bg;
+    transition: 0.3s;
+}
+
+#custom-power-menu:hover {
+    color: @main-bg;
+    background: @accent;
+}

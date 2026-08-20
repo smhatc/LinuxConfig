@@ -1,0 +1,7 @@
+#privacy {
+    padding: 0 4px;
+    border-bottom: 2px solid @warning;
+    color: @warning;
+    background: @main-bg;
+    transition: 0.3s;
+}

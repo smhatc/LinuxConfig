@@ -1,0 +1,12 @@
+#backlight {
+    padding: 0 4px;
+    border-bottom: 2px solid @accent;
+    color: @accent;
+    background: @main-bg;
+    transition: 0.3s;
+}
+
+#backlight:hover {
+    color: @main-bg;
+    background: @accent;
+}

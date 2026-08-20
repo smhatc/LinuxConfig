@@ -1,0 +1,57 @@
+{
+    // General configuration and layout
+    "on-sigusr1": "toggle",
+    "on-sigusr2": "reload",
+    "reload_style_on_change": true,
+    "layer": "bottom",
+    "position": "top",
+    "exclusive": true,
+    "fixed-center": true,
+    "width": 0,
+    "height": 0,
+    "margin": 0,
+    "spacing": 10,
+    "modules-left": [
+        "custom/notification-menu",
+        "clock",
+        "hyprland/language",
+        "hyprland/workspaces",
+        "custom/app-launcher",
+        "tray",
+    ],
+    "modules-right": [
+        "privacy",
+        "pulseaudio#output",
+        "pulseaudio#input",
+        "network",
+        "bluetooth",
+        "custom/night-light",
+        "backlight",
+        "idle_inhibitor",
+        "power-profiles-daemon",
+        "battery",
+        "custom/power-menu",
+    ],
+    // Modules configuration
+    "include": [
+        // Default modules
+        "~/.config/waybar/modules/backlight/backlight.jsonc",
+        "~/.config/waybar/modules/battery/battery.jsonc",
+        "~/.config/waybar/modules/bluetooth/bluetooth.jsonc",
+        "~/.config/waybar/modules/clock/clock.jsonc",
+        "~/.config/waybar/modules/idle_inhibitor/idle_inhibitor.jsonc",
+        "~/.config/waybar/modules/network/network.jsonc",
+        "~/.config/waybar/modules/power-profiles-daemon/power-profiles-daemon.jsonc",
+        "~/.config/waybar/modules/privacy/privacy.jsonc",
+        "~/.config/waybar/modules/pulseaudio/pulseaudio.jsonc",
+        "~/.config/waybar/modules/tray/tray.jsonc",
+        // Custom modules
+        "~/.config/waybar/modules/custom/app-launcher/app-launcher.jsonc",
+        "~/.config/waybar/modules/custom/night-light/night-light.jsonc",
+        "~/.config/waybar/modules/custom/notification-menu/notification-menu.jsonc",
+        "~/.config/waybar/modules/custom/power-menu/power-menu.jsonc",
+        // Hyprland-specific modules
+        "~/.config/waybar/modules/hyprland/language/language.jsonc",
+        "~/.config/waybar/modules/hyprland/workspaces/workspaces.jsonc",
+    ],
+}

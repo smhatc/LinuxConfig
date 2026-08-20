@@ -1,0 +1,22 @@
+{
+    "network": {
+        "interval": 10,
+        "format": "󱎔",
+        "format-ethernet": "󱎔",
+        "format-disabled": "󰤮",
+        "format-disconnected": "󰤫",
+        "format-wifi": "{icon}",
+        "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+        "min-length": 3,
+        "max-length": 3,
+        "on-click": "[[ $(nmcli radio wifi) == 'disabled' ]] && nmcli radio wifi on || nmcli radio wifi off",
+        "on-click-right": "foot nmtui-connect",
+        "cursor": false,
+        "tooltip": true,
+        "tooltip-format": "Interface: {ifname}",
+        "tooltip-format-ethernet": "Interface: {ifname}\nLAN IP: {ipaddr}/{cidr}",
+        "tooltip-format-disabled": "Wi-Fi Off",
+        "tooltip-format-disconnected": "No Wi-Fi Network Connected",
+        "tooltip-format-wifi": "Interface: {ifname}\nLAN IP: {ipaddr}/{cidr}\nNetwork: {essid}\nStrength: {signalStrength}%\nFrequency: {frequency}GHz",
+    },
+}

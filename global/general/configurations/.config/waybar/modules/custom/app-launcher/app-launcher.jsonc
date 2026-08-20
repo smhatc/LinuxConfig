@@ -1,0 +1,10 @@
+{
+    "custom/app-launcher": {
+        "format": "󰀻",
+        "min-length": 3,
+        "max-length": 3,
+        "on-click": "~/.config/rofi/scripts/app-launcher.sh",
+        "cursor": false,
+        "tooltip": false,
+    },
+}

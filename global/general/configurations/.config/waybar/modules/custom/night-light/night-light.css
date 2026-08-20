@@ -1,0 +1,21 @@
+#custom-night-light {
+    border-bottom: 2px solid @accent;
+    color: @accent;
+    background: @main-bg;
+    transition: 0.3s;
+}
+
+#custom-night-light:hover {
+    color: @main-bg;
+    background: @accent;
+}
+
+#custom-night-light.running {
+    border-bottom-color: @warning;
+    color: @warning;
+}
+
+#custom-night-light.running:hover {
+    color: @main-bg;
+    background: @warning;
+}

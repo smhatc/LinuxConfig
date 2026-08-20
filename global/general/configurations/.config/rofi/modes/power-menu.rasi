@@ -1,0 +1,108 @@
+@theme "~/.config/rofi/theme.rasi"
+
+/* General Configuration */
+* {
+    font: "JetBrainsMono Nerd Font Bold 15";
+}
+
+configuration {
+    show-icons: false;
+    hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: [ MousePrimary, MouseSecondary, MouseDPrimary ];
+    kb-select-1: "l,L";
+    kb-select-2: "e,E";
+    kb-select-3: "g,G";
+    kb-select-4: "s,S";
+    kb-select-5: "r,R";
+    kb-select-6: "p,P";
+}
+
+/* Main Window */
+window {
+    enabled: true;
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    x-offset: 0px;
+    y-offset: 0px;
+    cursor: "default";
+    width: 1000px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: @accent;
+    margin: 0px;
+    background-color: @main-bg;
+}
+
+/* Main Box */
+mainbox {
+    enabled: true;
+    padding: 0px;
+    border: 0px solid;
+    spacing: 20px;
+    margin: 0px;
+    background-color: @main-bg;
+    children: [ "listview" ];
+}
+
+/* List View */
+listview {
+    enabled: true;
+    columns: 1;
+    fixed-columns: true;
+    lines: 6;
+    fixed-height: true;
+    dynamic: false;
+    scrollbar: false;
+    cycle: false;
+    layout: vertical;
+    reverse: false;
+    cursor: "default";    
+    padding: 0px;
+    border: 0px solid;
+    spacing: 20px;
+    margin: 0px;
+    text-color: @accent;
+    background-color: @main-bg;
+}
+
+/* Elements */
+element {
+    enabled: true;
+    orientation: horizontal;
+    cursor: "default";
+    padding: 0px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: @accent;
+    spacing: 20px;
+    margin: 0px;
+    text-color: @accent;
+    background-color: @main-bg;
+}
+
+element selected {
+    text-color: @main-bg;
+    background-color: @accent;
+}
+
+element-text {
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+    cursor: inherit;
+    highlight: inherit;
+    padding: 20px;
+    text-color: inherit;
+    background-color: transparent;
+}
+
+/* Text Boxes (e.g. Error Message) */
+textbox {
+    enabled: true;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+    text-color: @accent;
+    background-color: @main-bg;
+}
