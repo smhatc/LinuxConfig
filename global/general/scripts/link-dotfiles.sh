@@ -1,5 +1,5 @@
-# Symlinking repo dotfiles to system's ~/ and ~/.config directories
-echo -e "${process_icon} Symlinking repo dotfiles to system's ~/ and ~/.config directories...\n"
+# Symlinking repo dotfiles to system's "~/" and "~/.config" directories
+echo -e "${process_icon} Symlinking repo dotfiles to system's \"~/\" and \"~/.config\" directories...\n"
 
 # Ensure dotfiles aren't ignored
 shopt -s dotglob nullglob
@@ -23,17 +23,17 @@ link_dotfiles() {
         fi
 
         ln -sfn "$abs_src_path" "$dst_path"
-        echo "${success_icon} Linked ${app_name}."
+        echo "${success_icon} Linked \"${app_name}\"."
     done
 }
 
-# ~/ dotfiles
+# "~/" dotfiles
 link_dotfiles "./global/general/configurations/home" "${HOME}"
 
-# ~/.config dotfiles
+# "~/.config" dotfiles
 link_dotfiles "./global/general/configurations/.config" "${HOME}/.config"
 
 # Prevent unintended behavior in the rest of setup.sh
 shopt -u dotglob nullglob
 
-echo -e "\n${success_icon} Finished symlinking repo dotfiles to system's ~/ and ~/.config directories."
+echo -e "\n${success_icon} Finished symlinking repo dotfiles to system's \"~/\" and \"~/.config\" directories."
