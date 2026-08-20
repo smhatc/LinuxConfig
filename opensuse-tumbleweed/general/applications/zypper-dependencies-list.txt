@@ -9,4 +9,3 @@ zip
 unzip
 findutils
 xdg-user-dirs
-stow
