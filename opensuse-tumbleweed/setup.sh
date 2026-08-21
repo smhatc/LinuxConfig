@@ -33,17 +33,18 @@ echo "${process_icon} Starting installation of script dependencies..."
 source ./opensuse-tumbleweed/general/scripts/install-zypper-dependencies.sh && xdg-user-dirs-update
 echo "${success_icon} Finished installation of script dependencies."
 
-########################
-### INSTALLING FONTS ###
-########################
+#################################
+### INSTALLING FONTS & THEMES ###
+#################################
 
-echo -e "\n########################"
-echo '### INSTALLING FONTS ###'
-echo -e "########################\n"
+echo -e "\n#################################"
+echo '### INSTALLING FONTS & THEMES ###'
+echo -e "#################################\n"
 
-echo "${process_icon} Starting installation of fonts..."
+echo "${process_icon} Starting installation of fonts and themes..."
 source ./global/general/scripts/install-fonts.sh
-echo "${success_icon} Finished installation of fonts."
+source ./global/general/scripts/install-themes.sh
+echo "${success_icon} Finished installation of fonts and themes."
 
 ##########################################################################
 ### INSTALLING NATIVE APPS, PATTERNS, DRIVERS, & CODECS (ZYPPER & OPI) ###
