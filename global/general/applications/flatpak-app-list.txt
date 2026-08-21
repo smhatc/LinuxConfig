@@ -15,6 +15,8 @@ org.gnome.Showtime
 org.gnome.TextEditor
 org.gnome.font-viewer
 org.gnome.gitlab.YaLTeR.VideoTrimmer
+org.gtk.Gtk3theme.adw-gtk3
+org.gtk.Gtk3theme.adw-gtk3-dark
 org.keepassxc.KeePassXC
 org.localsend.localsend_app
 org.mozilla.firefox
