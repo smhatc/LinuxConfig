@@ -1,8 +1,7 @@
-# Install any desired fonts which are rare to find in most distributions' main repositories
-# Other fonts (e.g. Noto and other general basic fonts) will be installed regularly via the specific package manager
+# Directly install fonts from outside distro repositories, useful for rare or non-free fonts
 
 # JetBrainsMono Nerd Font
-curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
+curl -sSLO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
 sudo tar -xJf JetBrainsMono.tar.xz -C /usr/share/fonts
 sudo fc-cache -fv
 rm JetBrainsMono.tar.xz
