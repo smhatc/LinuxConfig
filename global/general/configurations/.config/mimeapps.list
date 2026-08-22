@@ -1,0 +1,26 @@
+[Default Applications]
+application/zip=org.gnome.Nautilus.desktop
+image/jpeg=org.gnome.Loupe.desktop
+image/png=org.gnome.Loupe.desktop
+application/xml=org.gnome.TextEditor.desktop
+application/x-ipynb+json=code.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=org.onlyoffice.desktopeditors.desktop
+application/vnd.openxmlformats-officedocument.presentationml.presentation=org.onlyoffice.desktopeditors.desktop
+application/pdf=org.onlyoffice.desktopeditors.desktop
+application/x-7z-compressed=org.gnome.Nautilus.desktop
+text/x-python=code.desktop
+text/markdown=org.gnome.TextEditor.desktop
+image/webp=org.gnome.Loupe.desktop
+
+[Added Associations]
+application/zip=org.gnome.Nautilus.desktop;
+image/jpeg=org.gnome.Loupe.desktop;
+image/png=org.gnome.Loupe.desktop;
+application/xml=org.gnome.TextEditor.desktop;
+application/x-ipynb+json=code.desktop;
+application/vnd.tcpdump.pcap=org.wireshark.Wireshark.desktop;
+application/pdf=org.onlyoffice.desktopeditors.desktop;
+application/x-7z-compressed=org.gnome.Nautilus.desktop;
+text/x-python=code.desktop;
+text/markdown=org.gnome.TextEditor.desktop;
+image/webp=org.gnome.Loupe.desktop;
