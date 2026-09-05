@@ -26,4 +26,5 @@ NetworkManager-connection-editor
 blueman
 hyprsunset
 brightnessctl
+ddcutil
 power-profiles-daemon
