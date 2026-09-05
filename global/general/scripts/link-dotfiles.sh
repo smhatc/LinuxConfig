@@ -4,7 +4,7 @@ echo -e "${process_icon} Symlinking repo dotfiles to system's \"~/\" and \"~/.co
 # Ensure dotfiles aren't ignored
 shopt -s dotglob nullglob
 
-# Reusable function for both ~/ and ~/.config runs
+# Reusable function for both "~/" and "~/.config" runs
 link_dotfiles() {
     local repo_config_dotfiles=$1
     local system_config_dir=$2
