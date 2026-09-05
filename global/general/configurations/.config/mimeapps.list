@@ -11,6 +11,7 @@ application/x-7z-compressed=org.gnome.Nautilus.desktop
 text/x-python=code.desktop
 text/markdown=org.gnome.TextEditor.desktop
 image/webp=org.gnome.Loupe.desktop
+application/json=org.gnome.TextEditor.desktop
 
 [Added Associations]
 application/zip=org.gnome.Nautilus.desktop;
@@ -24,3 +25,4 @@ application/x-7z-compressed=org.gnome.Nautilus.desktop;
 text/x-python=code.desktop;
 text/markdown=org.gnome.TextEditor.desktop;
 image/webp=org.gnome.Loupe.desktop;
+application/json=org.gnome.TextEditor.desktop;
