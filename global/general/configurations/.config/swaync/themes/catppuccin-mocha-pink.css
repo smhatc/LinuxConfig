@@ -1,11 +1,11 @@
-/* Theme: Catppuccin Mocha Lavender */
+/* Theme: Catppuccin Mocha Pink */
 
+@define-color pink rgba(245, 194, 231, 1);
 @define-color red rgba(243, 139, 168, 1);
-@define-color lavender rgba(180, 190, 254, 1);
 @define-color overlay2 rgba(147, 153, 178, 1);
 @define-color base rgba(30, 30, 46, 1);
 
 @define-color main-bg @base;
-@define-color accent @lavender;
+@define-color accent @pink;
 @define-color regular @overlay2;
 @define-color critical @red;
