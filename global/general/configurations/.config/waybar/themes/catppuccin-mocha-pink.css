@@ -1,14 +1,14 @@
-/* Theme: Catppuccin Mocha Lavender */
+/* Theme: Catppuccin Mocha Pink */
 
+@define-color pink #f5c2e7;
 @define-color red #f38ba8;
 @define-color yellow #f9e2af;
 @define-color green #a6e3a1;
-@define-color lavender #b4befe;
 @define-color surface2 #585b70;
 @define-color base #1e1e2e;
 
 @define-color main-bg @base;
-@define-color accent @lavender;
+@define-color accent @pink;
 @define-color regular @surface2;
 @define-color warning @yellow;
 @define-color critical @red;
