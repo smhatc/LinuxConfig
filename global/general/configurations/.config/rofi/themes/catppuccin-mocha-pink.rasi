@@ -1,0 +1,9 @@
+/* Theme: Catppuccin Mocha Pink */
+
+* {
+    pink: #f5c2e7;
+    base: #1e1e2e;
+
+    main-bg: @base;
+    accent: @pink;
+}

@@ -1,0 +1,9 @@
+/* Theme: Catppuccin Mocha Green */
+
+* {
+    green: #a6e3a1;
+    base: #1e1e2e;
+
+    main-bg: @base;
+    accent: @green;
+}

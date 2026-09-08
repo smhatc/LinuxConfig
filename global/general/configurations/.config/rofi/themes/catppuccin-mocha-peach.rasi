@@ -1,0 +1,9 @@
+/* Theme: Catppuccin Mocha Peach */
+
+* {
+    peach: #fab387;
+    base: #1e1e2e;
+
+    main-bg: @base;
+    accent: @peach;
+}

@@ -1,0 +1,9 @@
+/* Theme: Catppuccin Mocha Blue */
+
+* {
+    blue: #89b4fa;
+    base: #1e1e2e;
+
+    main-bg: @base;
+    accent: @blue;
+}
