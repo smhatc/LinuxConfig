@@ -9,7 +9,7 @@ reboot=" Reboot            [R]"
 poweroff=" Power Off         [P]"
 
 # Outputting the power options to Rofi and saving the result
-selected=$(pkill rofi || echo -e "${lock}\n${exit}\n${logout}\n${suspend}\n${reboot}\n${poweroff}" | rofi -dmenu -config "~/.config/rofi/modes/power-menu.rasi")
+selected="$(pkill rofi || echo -e "${lock}\n${exit}\n${logout}\n${suspend}\n${reboot}\n${poweroff}" | rofi -dmenu -config ~/.config/rofi/modes/power-menu.rasi)"
 
 # Taking the appropriate action based on the returned result
 [[ "$selected" == "$lock" ]] && loginctl lock-session
