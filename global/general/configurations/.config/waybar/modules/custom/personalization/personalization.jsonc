@@ -1,0 +1,11 @@
+{
+    "custom/personalization": {
+        "format": "󰋩  ",
+        "min-length": 6,
+        "max-length": 6,
+        "on-click": "~/.config/rofi/scripts/wallpaper-switcher.sh",
+        "on-click-right": "~/.config/rofi/scripts/theme-switcher.sh",
+        "cursor": false,
+        "tooltip": false,
+    },
+}

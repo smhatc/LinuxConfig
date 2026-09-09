@@ -16,6 +16,7 @@
         "clock",
         "hyprland/language",
         "hyprland/workspaces",
+        "custom/personalization",
         "custom/app-launcher",
         "tray",
     ],
@@ -49,6 +50,7 @@
         "~/.config/waybar/modules/custom/app-launcher/app-launcher.jsonc",
         "~/.config/waybar/modules/custom/night-light/night-light.jsonc",
         "~/.config/waybar/modules/custom/notification-menu/notification-menu.jsonc",
+        "~/.config/waybar/modules/custom/personalization/personalization.jsonc",
         "~/.config/waybar/modules/custom/power-menu/power-menu.jsonc",
         // Hyprland-specific modules
         "~/.config/waybar/modules/hyprland/language/language.jsonc",

@@ -42,6 +42,7 @@ window#waybar {
 @import "./modules/custom/app-launcher/app-launcher.css";
 @import "./modules/custom/night-light/night-light.css";
 @import "./modules/custom/notification-menu/notification-menu.css";
+@import "./modules/custom/personalization/personalization.css";
 @import "./modules/custom/power-menu/power-menu.css";
 
 /* Hyprland-specific module styles */
