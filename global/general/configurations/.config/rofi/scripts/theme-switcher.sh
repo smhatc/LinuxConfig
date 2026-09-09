@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Theme switcher that works for the desktop UI stack and select apps such as terminals, also switches wallpaper to one belonging to the theme and allows a separate wallpaper switcher to show only wallpapers relating to the current theme
+# Per-app theme switcher, swaps the generic theme file of each app for the selected variant in its "themes/" folder
 themes_source_dir="${HOME}/.config/rofi/themes"
 current_theme_cache="${HOME}/.cache/current-theme"
 wallpaper_dir="${HOME}/.config/wallpapers"
@@ -8,12 +8,6 @@ theme_icon=""
 transition_type="any"
 transition_duration="2"
 transition_fps="60"
-
-# Waybar kills the process group of any command it spawns when it reloads, so the Waybar reload below would kill this script mid-run unless it detaches from its launcher first
-if [[ -z "$THEME_SWITCHER_DETACHED" ]]; then
-    THEME_SWITCHER_DETACHED=1 setsid --fork "$0" "$@"
-    exit 0
-fi
 
 # App -> "config_dir:generic_theme_file:reload_command" (empty reload_command = no live reload)
 declare -A themed_apps=(
@@ -25,11 +19,19 @@ declare -A themed_apps=(
     [Foot]="${HOME}/.config/foot:theme.ini:"
 )
 
+# Waybar kills the process group of any command it spawns when it reloads, so detach from the launcher before reloading Waybar below
+if [[ -z "$THEME_SWITCHER_DETACHED" ]]; then
+    THEME_SWITCHER_DETACHED=1 setsid --fork "$0" "$@"
+    exit 0
+fi
+
+# Fallback in case themes directory does not exist
 if [[ ! -d "$themes_source_dir" ]]; then
     notify-send -u critical "Theme Switcher" "Themes directory \"${themes_source_dir}\" not found"
     exit 1
 fi
 
+# Search themes and exit if none found, otherwise continue
 mapfile -t theme_names < <(find "$themes_source_dir" -maxdepth 1 -type f -iname "*.rasi" -printf "%f\n" | sed 's/\.rasi$//' | sort)
 
 if [[ ${#theme_names[@]} -eq 0 ]]; then
@@ -45,8 +47,10 @@ for theme_name in "${theme_names[@]}"; do
     theme_by_entry["${theme_icon} ${label}"]="$theme_name"
 done
 
+# Outputting the theme list to Rofi and saving the result
 selected_entry="$(pkill rofi || echo -en "$menu_entries" | rofi -dmenu -i -config ~/.config/rofi/modes/theme-switcher.rasi)"
 
+# Sanity checks
 [[ -z "$selected_entry" ]] && exit 0
 
 selected_theme="${theme_by_entry[$selected_entry]}"
@@ -58,6 +62,7 @@ fi
 
 selected_label="${selected_entry#"${theme_icon} "}"
 
+# Setting the selected theme for every app and reloading the ones supporting it
 for app in "${!themed_apps[@]}"; do
     IFS=':' read -r config_dir generic_file reload_cmd <<<"${themed_apps[$app]}"
     extension="${generic_file##*.}"
@@ -72,8 +77,10 @@ for app in "${!themed_apps[@]}"; do
     [[ -n "$reload_cmd" ]] && $reload_cmd &>/dev/null
 done
 
+# Caching the selected theme so the wallpaper switcher can scope its menu to it
 echo "$selected_theme" >"$current_theme_cache"
 
+# Search wallpapers belonging to the theme and exit if none found, otherwise continue
 theme_wallpaper_dir="$(find -L "$wallpaper_dir" -type d -iname "$selected_theme" | head -n1)"
 
 if [[ -z "$theme_wallpaper_dir" ]]; then
@@ -88,6 +95,7 @@ if [[ ${#theme_wallpapers[@]} -eq 0 ]]; then
     exit 0
 fi
 
+# Setting a random wallpaper belonging to the selected theme
 awww img "${theme_wallpapers[$((RANDOM % ${#theme_wallpapers[@]}))]}" \
     --transition-type "$transition_type" \
     --transition-duration "$transition_duration" \
