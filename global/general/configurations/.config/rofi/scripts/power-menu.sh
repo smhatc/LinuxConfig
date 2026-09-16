@@ -21,7 +21,7 @@ if [[ "$selected" == "$exit" ]]; then
     [[ -f "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" ]] && pkill /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
     [[ -f "$(command -v swaync)" ]] && pkill swaync
     [[ -f "$(command -v waybar)" ]] && pkill waybar
-    [[ -f "$(command -v hyprland)" ]] && hyprctl dispatch exit
+    [[ -f "$(command -v hyprland)" ]] && hyprctl dispatch 'hl.dsp.exit()'
 fi
 [[ "$selected" == "$logout" ]] && loginctl terminate-user "$USER"
 [[ "$selected" == "$suspend" ]] && systemctl suspend
