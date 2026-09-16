@@ -11,7 +11,8 @@ transition_fps="60"
 
 # App -> "config_dir:generic_theme_file:reload_command" (empty reload_command = no live reload)
 declare -A themed_apps=(
-    [Hyprland]="${HOME}/.config/hypr:theme.conf:hyprctl reload"
+    [Hyprland]="${HOME}/.config/hypr:theme.lua:hyprctl reload"
+    [Hyprlock]="${HOME}/.config/hypr:theme.conf:"
     [Waybar]="${HOME}/.config/waybar:theme.css:pkill -SIGUSR2 waybar"
     [SwayNC]="${HOME}/.config/swaync:theme.css:swaync-client -rs"
     [Rofi]="${HOME}/.config/rofi:theme.rasi:"
