@@ -1,0 +1,17 @@
+-- Theme: Catppuccin Mocha Pink
+
+pink = "rgb(f5c2e7)"
+red = "rgb(f38ba8)"
+yellow = "rgb(f9e2af)"
+base = "rgb(1e1e2e)"
+
+accentColor = pink
+mainBackground = base
+borderActiveColor = accentColor
+borderInactiveColor = "rgba(595959aa)"
+shadowColor = "rgba(1a1b2699)"
+warningColor = yellow
+failColor = red
+fontColor = accentColor
+fontFamily = "JetBrainsMono Nerd Font"
+fontFamilyBold = "JetBrainsMono Nerd Font Bold"
