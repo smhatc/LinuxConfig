@@ -2,46 +2,46 @@
 --- PERMISSIONS ---
 -------------------
 
-require("modules/permissions.lua")
+require("modules.permissions")
 
 -----------------------------
 --- ENVIRONMENT VARIABLES ---
 -----------------------------
 
-require("modules/environment-variables.lua")
+require("modules.environment-variables")
 
 ----------------------------
 --- PROGRAMS & AUTOSTART ---
 ----------------------------
 
-require("modules/programs-and-autostart.lua")
+require("modules.programs-and-autostart")
 
 -----------------------------
 --- MONITORS & WORKSPACES ---
 -----------------------------
 
-require("modules/monitors-and-workspaces.lua")
+require("modules.monitors-and-workspaces")
 
 ----------------------------
 --- LAYER & WINDOW RULES ---
 ----------------------------
 
-require("modules/layer-and-window-rules.lua")
+require("modules.layer-and-window-rules")
 
 ---------------------------
 --- INPUT & KEYBINDINGS ---
 ---------------------------
 
-require("modules/input-and-keybindings.lua")
+require("modules.input-and-keybindings")
 
 ------------------------
 --- LAYOUT & VISUALS ---
 ------------------------
 
-require("modules/layout-and-visuals.lua")
+require("modules.layout-and-visuals")
 
 ---------------------
 --- MISCELLANEOUS ---
 ---------------------
 
-require("modules/miscellaneous.lua")
+require("modules.miscellaneous")
