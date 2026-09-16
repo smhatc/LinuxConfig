@@ -16,7 +16,7 @@ fi
 #####################################
 
 # PATH variable
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+if ! [[ "$PATH" =~ $HOME/.local/bin:$HOME/bin: ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
     export PATH
 fi
@@ -72,7 +72,7 @@ alias "gbran"="git branch"
 
 # Hyprland commands
 alias "sth"="start-hyprland >/dev/null 2>&1"
-alias "hyprlock-restore"="hyprctl --instance 0 'keyword misc:allow_session_lock_restore 1' && hyprctl --instance 0 'dispatch exec hyprlock'"
+alias "hyprlock-restore"="hyprctl --instance 0 eval 'hl.config({ [\"misc.allow_session_lock_restore\"] = true })' && hyprctl --instance 0 dispatch 'hl.dsp.exec_cmd(\"hyprlock\")'"
 
 # Programs
 alias "n"="nano"
