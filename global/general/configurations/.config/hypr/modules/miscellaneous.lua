@@ -1,10 +1,18 @@
-----------------
-----  MISC  ----
-----------------
+---------------------
+--- MISCELLANEOUS ---
+---------------------
 
+-- Defining miscellaneous configuration options
+
+-- Disabling splash message, update popup, logo, and other general settings
 hl.config({
     misc = {
-        force_default_wallpaper = -1,    -- Set to 0 or 1 to disable the anime mascot wallpapers
-        disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
+        disable_hyprland_logo = true,
+        disable_splash_rendering = true,
+        font_family = fontFamily,
+        splash_font_family = fontFamily,
+    },
+    ecosystem = {
+        no_update_news = true,
     },
 })
