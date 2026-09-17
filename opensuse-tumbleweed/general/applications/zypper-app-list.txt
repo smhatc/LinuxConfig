@@ -29,6 +29,9 @@ gvfs
 crun
 podman
 podman-compose
+docker
+docker-rootless-extras
+docker-compose
 distrobox
 firewalld
 openssh
