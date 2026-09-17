@@ -28,6 +28,7 @@ xdg-utils
 gvfs
 crun
 podman
+podman-compose
 distrobox
 firewalld
 openssh
