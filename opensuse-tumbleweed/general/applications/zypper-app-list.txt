@@ -43,8 +43,6 @@ libnotify-tools
 rsync
 tree
 nano
-shfmt
-ShellCheck
 git
 starship
 fastfetch
