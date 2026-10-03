@@ -59,20 +59,9 @@ alias "dsbs"="distrobox stop"
 alias "dsbr"="distrobox rm"
 alias "dsbf"="distrobox ephemeral"
 
-# Git commands
-alias "gstat"="git status"
-alias "gdiff"="git diff"
-alias "glog"="git log --graph"
-alias "gadd"="git add"
-alias "gcom"="git commit -m"
-alias "gpush"="git push"
-alias "gpull"="git pull"
-alias "gclon"="git clone"
-alias "gbran"="git branch"
-
 # Hyprland commands
 alias "sth"="start-hyprland >/dev/null 2>&1"
-alias "hyprlock-restore"="hyprctl --instance 0 eval 'hl.config({ [\"misc.allow_session_lock_restore\"] = true })' && hyprctl --instance 0 dispatch 'hl.dsp.exec_cmd(\"hyprlock\")'"
+alias "hyprlock-restore"="~/.config/waybar/scripts/session.sh restore-lock"
 
 # Programs
 alias "n"="nano"
@@ -94,14 +83,4 @@ up() {
     [[ -f "$(command -v flatpak)" ]] && fup
     [[ -f "$(command -v distrobox)" ]] && dsbu
     [[ -f "$(command -v zypper)" ]] && zrf && zup
-}
-
-# Stage, commit, and push all files to Git repository
-gall() {
-    if [[ -f "$(command -v git)" ]]; then
-        read -rp "Git commit message (staging, committing, and pushing all changes): " commit
-        git add .
-        git commit -m "$commit"
-        git push
-    fi
 }

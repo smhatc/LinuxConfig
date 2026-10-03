@@ -5,4 +5,17 @@
 	defaultBranch = main
 [core]
 	editor = code --wait
-
+[alias]
+    in = init
+	cl = clone
+	lg = log --all --graph
+	st = status
+	df = diff
+	ad = add
+	cm = commit -m
+	ps = push
+	ft = fetch
+	pl = pull
+	br = branch
+	co = checkout
+	mg = merge
