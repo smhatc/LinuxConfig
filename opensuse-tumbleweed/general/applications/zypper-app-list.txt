@@ -44,6 +44,7 @@ rsync
 tree
 nano
 git
+gh
 starship
 fastfetch
 kitty
