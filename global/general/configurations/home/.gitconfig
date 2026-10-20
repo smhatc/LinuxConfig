@@ -6,7 +6,7 @@
 [core]
 	editor = code --wait
 [alias]
-    in = init
+	in = init
 	cl = clone
 	lg = log --all --graph
 	st = status
